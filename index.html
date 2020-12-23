@@ -13,15 +13,6 @@
     <link rel="stylesheet" href="assets/css/structure.css" />
 
     <title>Frontend Mentor | J4ckDev</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -32,67 +23,68 @@
 
       Dark Mode
     </header>
-
-    <div class="cards">
-      <div class="card border fb-card">
-        <div class="top-tittle">
-          <img class="logo" src="./assets/svg/icon-facebook.svg" alt="Facebook logo" />
-          <h2 class="username">@J4ckDev</h2>
+    <section id="top-cards">
+      <div class="cards">
+        <div class="card border fb-card">
+          <div class="top-tittle">
+            <img class="logo" src="./assets/svg/icon-facebook.svg" alt="Facebook logo" />
+            <h2 class="username">@J4ckDev</h2>
+          </div>
+          <h3 class="follow-number">1987</h3>
+          <p class="follow-text">Followers</p>
+          <div class="follow-today new">
+            <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
+            <p>12 Today</p>
+          </div>
+          
         </div>
-        <h3 class="follow-number">1987</h3>
-        <p class="follow-text">Followers</p>
-        <div class="follow-today new">
-          <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
-          <p>12 Today</p>
+        <div class="card border tw-card">
+          <div class="top-tittle">
+            <img class="logo" src="./assets/svg/icon-twitter.svg" alt="Twitter logo" />
+            <h2 class="username">@J4ckdev</h2>
+          </div>
+          <h3 class="follow-number">1044</h3>
+          <p class="follow-text">Followers</p>
+          <div class="follow-today new">
+            <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
+            <p>99 Today</p>
+          </div>
+          
         </div>
-        
+        <div class="card border ig-card">
+          <div class="top-tittle">
+            <img class="logo" src="./assets/svg/icon-instagram.svg" alt="Instagram logo" />
+            <h2 class="username">@J4ckDev</h2>
+          </div>
+  
+          <h3 class="follow-number">11k</h3>
+          <p class="follow-text">Followers</p>
+          <div class="follow-today new">
+            <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
+            <p>1099 Today</p>
+          </div>
+          
+        </div>
+        <div class="card border yb-card">
+          <div class="top-tittle">
+            <img class="logo" src="./assets/svg/icon-youtube.svg" alt="Youtube logo" />
+            <h2 class="username">J4ckDev</h2>
+          </div>
+  
+          <h3 class="follow-number">8239</h3>
+          <p class="follow-text">Subscribers</p>
+          <div class="follow-today less">
+            <img class="logo" src="./assets/svg/icon-down.svg" alt="Pérdida de seguidores" />
+            <p>144 Today</p>
+          </div>
+          
+        </div>
       </div>
-      <div class="card border tw-card">
-        <div class="top-tittle">
-          <img class="logo" src="./assets/svg/icon-twitter.svg" alt="Twitter logo" />
-          <h2 class="username">@J4ckdev</h2>
-        </div>
-        <h3 class="follow-number">1044</h3>
-        <p class="follow-text">Followers</p>
-        <div class="follow-today new">
-          <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
-          <p>99 Today</p>
-        </div>
-        
-      </div>
-      <div class="card border ig-card">
-        <div class="top-tittle">
-          <img class="logo" src="./assets/svg/icon-instagram.svg" alt="Instagram logo" />
-          <h2 class="username">@J4ckDev</h2>
-        </div>
+    </section>
+    
 
-        <h3 class="follow-number">11k</h3>
-        <p class="follow-text">Followers</p>
-        <div class="follow-today new">
-          <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
-          <p>1099 Today</p>
-        </div>
-        
-      </div>
-      <div class="card border yb-card">
-        <div class="top-tittle">
-          <img class="logo" src="./assets/svg/icon-youtube.svg" alt="Youtube logo" />
-          <h2 class="username">J4ckDev</h2>
-        </div>
-
-        <h3 class="follow-number">8239</h3>
-        <p class="follow-text">Subscribers</p>
-        <div class="follow-today less">
-          <img class="logo" src="./assets/svg/icon-down.svg" alt="Pérdida de seguidores" />
-          <p>144 Today</p>
-        </div>
-        
-      </div>
-    </div>
-
-    <section id="Today"></section>
-
-    <h2 id="today-tittle">Overview - Today</h2>
+    <section id="today">
+      <h2 id="today-tittle">Overview - Today</h2>
 
     <div class="cards">
       <div class="card today">
@@ -200,9 +192,10 @@
         </div>
       </div>
     </div>
+    </section>
 
     <div class="attribution">
-      Challenge by
+      <p>Challenge by
       <a
         href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
         target="_blank"
@@ -214,7 +207,7 @@
         target="_blank"
         rel="noopener noreferrer"
         >J4ckDev</a
-      >.
+      >.</p>
     </div>
     <script src="./assets/js/app.js"></script>
   </body>

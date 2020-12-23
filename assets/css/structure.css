@@ -9,7 +9,7 @@
     --card-followers-today: 12px;
     --card-number-today: 32px;
     /*Cards*/
-    --card-width: 325px;
+    --card-min-width: 325px;
     --card-margin: 12.5px;
 
 }
@@ -22,6 +22,9 @@ body{
     max-width: var(--max-width);
     margin: auto;
 }
+#top-cards,#today{
+    padding: 0px 25px;
+}
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -31,8 +34,9 @@ body{
     text-align: center;
 }
 .card{
-    width: var(--card-width);
-    margin: var(--card-margin);
+    min-width: var(--card-min-width);
+    width: 100%;
+    margin: var(--card-margin) 0px;
     border-radius: 4px;
     overflow: hidden;    
 }
@@ -76,7 +80,7 @@ body{
     font-weight: bold;
 }
 #today-tittle{
-    margin: 33px 25px 17px 25px; 
+    margin: 33px 0px 17px 0px; 
 }
 .card.today{
     margin: 10px 0px 10px 0px;
@@ -110,4 +114,16 @@ body{
     padding: 0;
     margin: 10px 0px;
     font-size: var(--card-number-today);    
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+  }
+.attribution a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.attribution a:hover{
+    filter:brightness(1.5);
 }
