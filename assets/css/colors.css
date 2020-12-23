@@ -19,65 +19,69 @@
   );
   --toggle-light: hsl(230, 22%, 74%);
   /*Neutral Colors*/
-  --bg-dark: hsl(230, 17%, 14%);
-  --top-bg-dark: hsl(232, 19%, 15%);
-  --bg-card-dark: hsl(228, 28%, 20%);
-  --bg-card-dark-h: hsl(228, 26%, 27%);
-  --text-secondary-dark: hsl(228, 34%, 66%);
-  --text-dark: hsl(0, 0%, 100%);
-  --text-atribution-dark: hsl(228, 73%, 78%);
-  --bg-light: hsl(0, 0%, 100%);
-  --top-bg-light: hsl(225, 100%, 98%);
-  --bg-card-light: hsl(227, 47%, 96%);
-  --text-secondary-light: hsl(228, 12%, 44%);
-  --text-light: hsl(230, 17%, 14%);
-  --text-atribution-light: hsl(228, 45%, 44%);
+  --bg: hsl(0, 0%, 100%);
+  --top-bg: hsl(225, 100%, 98%);
+  --bg-card: hsl(227, 47%, 96%);
+  --bg-card-a: hsl(232, 33%, 91%);
+  --text-secondary: hsl(228, 12%, 44%);
+  --text: hsl(230, 17%, 14%);
+  --text-atribution: hsl(228, 45%, 44%);
+  --text-atribution-h: brightness(0.5);
 }
 
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+header {
+  background-color: var(--top-bg);
+}
+.card {
+  background-color: var(--bg-card);
+}
+.card:active {
+  background-color: var(--bg-card-a);
+}
+.card.border.fb-card::before {
+  background-color: var(--fb-color);
+}
+.card.border.tw-card::before {
+  background-color: var(--tw-color);
+}
+.card.border.ig-card::before {
+  background: var(--ig-color);
+}
+.card.border.yb-card::before {
+  background-color: var(--yb-color);
+}
+.username,
+.follow-text.title {
+  color: var(--text-secondary);
+}
+.follow-today.less,
+.percentage.down {
+  color: var(--bright-red);
+}
+.follow-today.new,
+.percentage.up {
+  color: var(--lime-green);
+}
+.attribution a {
+  color: var(--text-atribution);
+}
+.attribution a:hover {
+    filter: var(--text-atribution-h);
+  }
+
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-dark);
-    color: var(--text-dark);
-  }
-  header {
-    background-color: var(--top-bg-dark);
-  }
-  .card {
-    background-color: var(--bg-card-dark);
-  }
-  .card:active {
-    background-color: var(--bg-card-dark-h);
-  }
-  .card.border.fb-card::before {
-    background-color: var(--fb-color);
-  }
-  .card.border.tw-card::before {
-    background-color: var(--tw-color);
-  }
-  .card.border.ig-card::before {
-    background: var(--ig-color);
-  }
-  .card.border.yb-card::before {
-    background-color: var(--yb-color);
-  }
-  .username {
-    color: var(--text-secondary-dark);
-  }
-  .follow-text {
-    color: var(--text-secondary-dark);
-  }
-  .follow-today.less,
-  .percentage.down {
-    color: var(--bright-red);
-  }
-  .follow-today.new,
-  .percentage.up {
-    color: var(--lime-green);
-  }
-  .title {
-    color: var(--text-secondary-dark);
-  }
-  .attribution a {
-    color: var(--text-atribution-dark);
+  :root {
+    --bg: hsl(230, 17%, 14%);
+    --top-bg: hsl(232, 19%, 15%);
+    --bg-card: hsl(228, 28%, 20%);
+    --bg-card-a: hsl(228, 26%, 27%);
+    --text-secondary: hsl(228, 34%, 66%);
+    --text: hsl(0, 0%, 100%);
+    --text-atribution: hsl(228, 73%, 78%);
+    --text-atribution-h: brightness(1.5);
   }
 }
