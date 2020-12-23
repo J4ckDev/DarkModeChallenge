@@ -11,6 +11,9 @@
     />
     <link rel="stylesheet" href="assets/css/colors.css" />
     <link rel="stylesheet" href="assets/css/structure.css" />
+    <link rel="stylesheet" href="assets/css/desktopl.css" media="(min-width: 1200px)">
+    <link rel="stylesheet" href="assets/css/desktopm.css" media="(min-width: 966px) and (max-width:1199px)">
+    <link rel="stylesheet" href="assets/css/tablet.css" media="(min-width: 670px) and (max-width:965px)">
 
     <title>Frontend Mentor | J4ckDev</title>
   </head>
@@ -27,187 +30,249 @@
       <div class="cards">
         <div class="card border fb-card">
           <div class="top-tittle">
-            <img class="logo" src="./assets/svg/icon-facebook.svg" alt="Facebook logo" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-facebook.svg"
+              alt="Facebook logo"
+            />
             <h2 class="username">@J4ckDev</h2>
           </div>
           <h3 class="follow-number">1987</h3>
           <p class="follow-text">Followers</p>
           <div class="follow-today new">
-            <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-up.svg"
+              alt="Nuevos seguidores"
+            />
             <p>12 Today</p>
           </div>
-          
         </div>
         <div class="card border tw-card">
           <div class="top-tittle">
-            <img class="logo" src="./assets/svg/icon-twitter.svg" alt="Twitter logo" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-twitter.svg"
+              alt="Twitter logo"
+            />
             <h2 class="username">@J4ckdev</h2>
           </div>
           <h3 class="follow-number">1044</h3>
           <p class="follow-text">Followers</p>
           <div class="follow-today new">
-            <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-up.svg"
+              alt="Nuevos seguidores"
+            />
             <p>99 Today</p>
           </div>
-          
         </div>
         <div class="card border ig-card">
           <div class="top-tittle">
-            <img class="logo" src="./assets/svg/icon-instagram.svg" alt="Instagram logo" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-instagram.svg"
+              alt="Instagram logo"
+            />
             <h2 class="username">@J4ckDev</h2>
           </div>
-  
+
           <h3 class="follow-number">11k</h3>
           <p class="follow-text">Followers</p>
           <div class="follow-today new">
-            <img class="logo" src="./assets/svg/icon-up.svg" alt="Nuevos seguidores" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-up.svg"
+              alt="Nuevos seguidores"
+            />
             <p>1099 Today</p>
           </div>
-          
         </div>
         <div class="card border yb-card">
           <div class="top-tittle">
-            <img class="logo" src="./assets/svg/icon-youtube.svg" alt="Youtube logo" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-youtube.svg"
+              alt="Youtube logo"
+            />
             <h2 class="username">J4ckDev</h2>
           </div>
-  
+
           <h3 class="follow-number">8239</h3>
           <p class="follow-text">Subscribers</p>
           <div class="follow-today less">
-            <img class="logo" src="./assets/svg/icon-down.svg" alt="Pérdida de seguidores" />
+            <img
+              class="logo"
+              src="./assets/svg/icon-down.svg"
+              alt="Pérdida de seguidores"
+            />
             <p>144 Today</p>
           </div>
-          
         </div>
       </div>
     </section>
-    
 
     <section id="today">
-      <h2 id="today-tittle">Overview - Today</h2>
-
-    <div class="cards">
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Page Views</h3>
-          <img class="brand" alt="Facebook Logo" src="./assets/svg/icon-facebook.svg" />
+      <div class="cards">
+        <div class="title-cont">
+          <h2 id="today-tittle">Overview - Today</h2>
+        </div>        
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Page Views</h3>
+            <img
+              class="brand"
+              alt="Facebook Logo"
+              src="./assets/svg/icon-facebook.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">87</h4>
+            <div class="percentage up">
+              <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor" />
+              <p>3%</p>
+            </div>
+          </div>
         </div>
-        <div class="body-card">
-          <h4 class="number">87</h4>
-          <div class="percentage up">
-            <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor">
-            <p>3%</p>
-          </div>          
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Likes</h3>
+            <img
+              class="brand"
+              alt="Facebook Logo"
+              src="./assets/svg/icon-facebook.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">52</h4>
+            <div class="percentage down">
+              <img src="./assets/svg/icon-down.svg" alt="Disminuyó el valor" />
+              <p>2%</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Likes</h3>
+            <img
+              class="brand"
+              alt="Instagram Logo"
+              src="./assets/svg/icon-instagram.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">5462</h4>
+            <div class="percentage up">
+              <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor" />
+              <p>2257%</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Profile Views</h3>
+            <img
+              class="brand"
+              alt="Instagram Logo"
+              src="./assets/svg/icon-instagram.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">52k</h4>
+            <div class="percentage up">
+              <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor" />
+              <p>1375%</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Retweets</h3>
+            <img
+              class="brand"
+              alt="Twitter Logo"
+              src="./assets/svg/icon-twitter.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">117</h4>
+            <div class="percentage up">
+              <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor" />
+              <p>303%</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Likes</h3>
+            <img
+              class="brand"
+              alt="Twitter Logo"
+              src="./assets/svg/icon-twitter.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">507</h4>
+            <div class="percentage up">
+              <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor" />
+              <p>553%</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Likes</h3>
+            <img
+              class="brand"
+              alt="Youtube Logo"
+              src="./assets/svg/icon-youtube.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">107</h4>
+            <div class="percentage down">
+              <img src="./assets/svg/icon-down.svg" alt="Disminuyó el valor" />
+              <p>19%</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top-card">
+            <h3 class="title">Total Views</h3>
+            <img
+              class="brand"
+              alt="Youtube Logo"
+              src="./assets/svg/icon-youtube.svg"
+            />
+          </div>
+          <div class="body-card">
+            <h4 class="number">1407</h4>
+            <div class="percentage down">
+              <img src="./assets/svg/icon-down.svg" alt="Disminuyó el valor" />
+              <p>12%</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Likes</h3>
-          <img class="brand" alt="Facebook Logo" src="./assets/svg/icon-facebook.svg" />
-        </div>
-        <div class="body-card">
-          <h4 class="number">52</h4>
-          <div class="percentage down">
-            <img src="./assets/svg/icon-down.svg" alt="Disminuyó el valor">
-            <p>2%</p>
-          </div>          
-        </div>
-      </div>
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Likes</h3>
-          <img class="brand" alt="Instagram Logo" src="./assets/svg/icon-instagram.svg" />
-        </div>
-        <div class="body-card">
-          <h4 class="number">5462</h4>
-          <div class="percentage up">
-            <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor">
-            <p>2257%</p>
-          </div>          
-        </div>
-      </div>
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Profile Views</h3>
-          <img class="brand" alt="Instagram Logo" src="./assets/svg/icon-instagram.svg"/>
-        </div>
-        <div class="body-card">
-          <h4 class="number">52k</h4>
-          <div class="percentage up">
-            <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor">
-            <p>1375%</p>
-          </div>          
-        </div>
-      </div>
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Retweets</h3>
-          <img class="brand" alt="Twitter Logo" src="./assets/svg/icon-twitter.svg"/>
-        </div>
-        <div class="body-card">
-          <h4 class="number">117</h4>
-          <div class="percentage up">
-            <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor">
-            <p>303%</p>
-          </div>          
-        </div>
-      </div>
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Likes</h3>
-          <img class="brand" alt="Twitter Logo" src="./assets/svg/icon-twitter.svg"/>
-        </div>
-        <div class="body-card">
-          <h4 class="number">507</h4>
-          <div class="percentage up">
-            <img src="./assets/svg/icon-up.svg" alt="Aumentó el valor">
-            <p>553%</p>
-          </div>          
-        </div>
-      </div>
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Likes</h3>
-          <img class="brand" alt="Youtube Logo" src="./assets/svg/icon-youtube.svg"/>
-        </div>
-        <div class="body-card">
-          <h4 class="number">107</h4>
-          <div class="percentage down">
-            <img src="./assets/svg/icon-down.svg" alt="Disminuyó el valor">
-            <p>19%</p>
-          </div>          
-        </div>
-      </div>
-      <div class="card today">
-        <div class="top-card">
-          <h3 class="title">Total Views</h3>
-          <img class="brand" alt="Youtube Logo" src="./assets/svg/icon-youtube.svg"/>
-        </div>
-        <div class="body-card">
-          <h4 class="number">1407</h4>
-          <div class="percentage down">
-            <img src="./assets/svg/icon-down.svg" alt="Disminuyó el valor">
-            <p>12%</p>
-          </div>          
-        </div>
-      </div>
-    </div>
     </section>
 
     <div class="attribution">
-      <p>Challenge by
-      <a
-        href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        href="https://github.com/J4ckDev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >J4ckDev</a
-      >.</p>
+      <p>
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/J4ckDev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >J4ckDev</a
+        >.
+      </p>
     </div>
     <script src="./assets/js/app.js"></script>
   </body>

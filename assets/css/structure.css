@@ -1,129 +1,133 @@
-:root{
-    /*Layout*/
-    --min-width: 375px;
-    --max-width: 1440px;    
-    /*Tipography*/
-    --card-social: 12px;
-    --card-headings: 14px;
-    --card-followers: 58px;
-    --card-followers-today: 12px;
-    --card-number-today: 32px;
-    /*Cards*/
-    --card-min-width: 325px;
-    --card-margin: 12.5px;
-
+:root {
+  /*Layout*/
+  --min-width: 375px;
+  --max-width: 1440px;
+  /*Tipography*/
+  --card-social: 12px;
+  --card-headings: 14px;
+  --card-followers: 58px;
+  --card-followers-today: 12px;
+  --card-number-today: 32px;
+  /*Cards*/
+  --card-min-width: 325px;
+  --card-margin: 12.5px;
 }
-*{
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
-body{
-    min-width: var(--min-width);
-    max-width: var(--max-width);
-    margin: auto;
+body {
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  margin: auto;
 }
-#top-cards,#today{
-    padding: 0px 25px;
+#top-cards,
+#today {
+  padding: 0px 25px;
 }
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: var(--card-min-width);
 }
-.card{
-    min-width: var(--card-min-width);
-    width: 100%;
-    margin: var(--card-margin) 0px;
-    border-radius: 4px;
-    overflow: hidden;    
+.card {
+  width: 100%;
+  margin: var(--card-margin) 0px;
+  border-radius: 4px;
+  overflow: hidden;
 }
-.card.border::before{
-   content: "";
-   display: block; 
-   height: 4px;
+.card.border::before {
+  content: "";
+  display: block;
+  height: 4px;
 }
-.top-tittle{
-    padding: 20px 0px 10px 0px;
-    width: 100%;
-    display: flex;  
-    justify-content: center;
-    align-items: center;  
+.top-tittle {
+  padding: 20px 0px 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.logo{
-    margin-right: 7px;
+.logo {
+  margin-right: 7px;
 }
-.username{
-    font-size: var(--card-social);
+.username {
+  font-size: var(--card-social);
 }
-.follow-number{
-    padding: 0;
-    margin: 0;
-    font-size: var(--card-followers);
-    letter-spacing: -3px;
+.follow-number {
+  padding: 0;
+  margin: 0;
+  font-size: var(--card-followers);
+  letter-spacing: -3px;
 }
-.follow-text{
-    padding: 0;
-    margin: -2px 0px 10px 0px;
-    text-transform: uppercase;
-    font-size: var(--card-social);
-    letter-spacing: 5px;
+.follow-text {
+  padding: 0;
+  margin: -2px 0px 10px 0px;
+  text-transform: uppercase;
+  font-size: var(--card-social);
+  letter-spacing: 5px;
 }
-.follow-today{
-    margin: 13px 0px 10px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--card-followers-today);
-    font-weight: bold;
+.follow-today {
+  margin: 13px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--card-followers-today);
+  font-weight: bold;
 }
-#today-tittle{
-    margin: 33px 0px 17px 0px; 
+.title-cont{
+  text-align: left;
+  width: 100%;
+  max-width: 1113px;
 }
-.card.today{
-    margin: 10px 0px 10px 0px;
+#today-tittle {
+  margin: 0;
+  padding: 33px 0px 17px 0px;
 }
-.top-card, .body-card{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
+.top-card,
+.body-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.top-card{
-    margin: 13px 30px 0px 23px;
+.top-card {
+  padding: 13px 30px 0px 23px;
 }
-.body-card{
-    margin: 0px 30px 5px 23px;
+.body-card {
+  padding: 0px 30px 5px 23px;
 }
-.title{
-    font-size: var(--card-headings);
+.title {
+  font-size: var(--card-headings);
 }
-.percentage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: var(--card-followers-today);
-    font-weight: bold;
-    padding-top: 13px;
+.percentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--card-followers-today);
+  font-weight: bold;
+  padding-top: 13px;
 }
-.percentage p{
-    margin-left: 2px;
+.percentage p {
+  margin-left: 2px;
 }
-.number{
-    padding: 0;
-    margin: 10px 0px;
-    font-size: var(--card-number-today);    
+.number {
+  padding: 0;
+  margin: 10px 0px;
+  font-size: var(--card-number-today);
 }
 .attribution {
-    font-size: 11px;
-    text-align: center;
-    margin: 5px 0px 20px 0px;
-  }
-.attribution a{
-    text-decoration: none;
-    font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+  margin: 5px 0px 20px 0px;
 }
-.attribution a:hover{
-    filter:brightness(1.5);
+.attribution a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.attribution a:hover {
+  filter: brightness(1.5);
 }
