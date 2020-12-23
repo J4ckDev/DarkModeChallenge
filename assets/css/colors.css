@@ -56,10 +56,13 @@
     .follow-text{
         color: var(--text-secondary-dark);
     }
-    .follow-today.less{
+    .follow-today.less, .percentage.down{
         color: var(--bright-red);
     }
-    .follow-today.new{
+    .follow-today.new, .percentage.up{
         color: var(--lime-green);
+    }
+    .title{
+        color: var(--text-secondary-dark);
     }
 }

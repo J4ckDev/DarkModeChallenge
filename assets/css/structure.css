@@ -7,6 +7,7 @@
     --card-headings: 14px;
     --card-followers: 58px;
     --card-followers-today: 12px;
+    --card-number-today: 32px;
     /*Cards*/
     --card-width: 325px;
     --card-margin: 12.5px;
@@ -21,7 +22,7 @@ body{
     max-width: var(--max-width);
     margin: auto;
 }
-#social-cards{
+.cards{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -33,7 +34,7 @@ body{
     width: var(--card-width);
     margin: var(--card-margin);
     border-radius: 4px;
-    overflow: hidden;
+    overflow: hidden;    
 }
 .card.border::before{
    content: "";
@@ -73,4 +74,40 @@ body{
     align-items: center;
     font-size: var(--card-followers-today);
     font-weight: bold;
+}
+#today-tittle{
+    margin: 33px 25px 17px 25px; 
+}
+.card.today{
+    margin: 10px 0px 10px 0px;
+}
+.top-card, .body-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.top-card{
+    margin: 13px 30px 0px 23px;
+}
+.body-card{
+    margin: 0px 30px 5px 23px;
+}
+.title{
+    font-size: var(--card-headings);
+}
+.percentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--card-followers-today);
+    font-weight: bold;
+    padding-top: 13px;
+}
+.percentage p{
+    margin-left: 2px;
+}
+.number{
+    padding: 0;
+    margin: 10px 0px;
+    font-size: var(--card-number-today);    
 }
