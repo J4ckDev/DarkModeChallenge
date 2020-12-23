@@ -36,6 +36,16 @@ body {
 header {
   background-color: var(--top-bg);
 }
+#main-title {
+  border-bottom: 1px solid var(--text-secondary);
+}
+#subtitle-main,
+#title-theme,
+.username,
+.follow-text,
+.title {
+  color: var(--text-secondary);
+}
 .card {
   background-color: var(--bg-card);
 }
@@ -54,10 +64,6 @@ header {
 .card.border.yb-card::before {
   background-color: var(--yb-color);
 }
-.username,
-.follow-text.title {
-  color: var(--text-secondary);
-}
 .follow-today.less,
 .percentage.down {
   color: var(--bright-red);
@@ -70,8 +76,8 @@ header {
   color: var(--text-atribution);
 }
 .attribution a:hover {
-    filter: var(--text-atribution-h);
-  }
+  filter: var(--text-atribution-h);
+}
 
 @media (prefers-color-scheme: dark) {
   :root {

@@ -3,6 +3,7 @@
   --min-width: 375px;
   --max-width: 1440px;
   /*Tipography*/
+  --header-one: 24px;
   --card-social: 12px;
   --card-headings: 14px;
   --card-followers: 58px;
@@ -20,6 +21,28 @@ body {
   min-width: var(--min-width);
   max-width: var(--max-width);
   margin: auto;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: 20px 25px 0px;
+}
+#subtitle-main,
+#title-theme,
+.title {
+  font-size: var(--card-headings);
+}
+#main-title{
+  padding: 0px 0px 25px;
+}
+h1 {
+  font-size: var(--header-one);
+  margin: 0;
+  padding: 16px 0px 5px;
+}
+#subtitle-main{
+  margin: 0;
+  padding: 0;
 }
 #top-cards,
 #today {
@@ -39,6 +62,7 @@ body {
   margin: var(--card-margin) 0px;
   border-radius: 4px;
   overflow: hidden;
+  cursor: pointer;
 }
 .card.border::before {
   content: "";
@@ -46,7 +70,7 @@ body {
   height: 4px;
 }
 .top-tittle {
-  padding: 20px 0px 10px 0px;
+  padding: 20px 0px 10px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -66,27 +90,27 @@ body {
 }
 .follow-text {
   padding: 0;
-  margin: -2px 0px 10px 0px;
+  margin: -2px 0px 10px;
   text-transform: uppercase;
   font-size: var(--card-social);
   letter-spacing: 5px;
 }
 .follow-today {
-  margin: 13px 0px 10px 0px;
+  margin: 13px 0px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: var(--card-followers-today);
   font-weight: bold;
 }
-.title-cont{
+.title-cont {
   text-align: left;
   width: 100%;
   max-width: 1113px;
 }
 #today-tittle {
   margin: 0;
-  padding: 33px 0px 17px 0px;
+  padding: 33px 0px 17px;
 }
 .top-card,
 .body-card {
@@ -99,9 +123,6 @@ body {
 }
 .body-card {
   padding: 0px 30px 5px 23px;
-}
-.title {
-  font-size: var(--card-headings);
 }
 .percentage {
   display: flex;
@@ -122,7 +143,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin: 5px 0px 20px 0px;
+  margin: 5px 0px 20px;
 }
 .attribution a {
   text-decoration: none;
