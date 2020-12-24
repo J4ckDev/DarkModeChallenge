@@ -29,14 +29,14 @@ h1{
   padding-right: 12px;
 }
 #top-cards{
-  margin-top: -107px;
+  margin: -107px 0px 7px;
 }
 #main-title{
   border: none;
 }
 .card {
   width: 254.75px;
-  margin: 0px 15px 30px;
+  margin: 0px 15px 25px;
 }
 #today-tittle {
   margin: 0;
