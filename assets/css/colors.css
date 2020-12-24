@@ -12,13 +12,8 @@
     hsl(329, 70%, 58%) 100%
   );
   --yb-color: hsl(348, 97%, 39%);
-  --toggle-dark: linear-gradient(
-    to right,
-    hsl(210, 78%, 56%) 0%,
-    hsl(146, 68%, 55%) 100%
-  );
-  --toggle-light: hsl(230, 22%, 74%);
-  /*Neutral Colors*/
+  /*Theme Colors*/
+  --toggle: hsl(230, 22%, 74%);
   --bg: hsl(0, 0%, 100%);
   --top-bg: hsl(225, 100%, 98%);
   --bg-card: hsl(227, 47%, 96%);
@@ -37,7 +32,7 @@ header {
   background-color: var(--top-bg);
 }
 #main-title {
-  border-bottom: 1px solid var(--text-secondary);
+  border-bottom: 1px solid var(--bg-card-a);
 }
 #subtitle-main,
 #title-theme,
@@ -46,10 +41,17 @@ header {
 .title {
   color: var(--text-secondary);
 }
+.toggle {
+  background: var(--toggle);
+}
+.slider,
 .card {
   background-color: var(--bg-card);
 }
-.card:active {
+#change-theme:checked + .toggle {
+  background: var(--toggle-checked);
+}
+.card:hover {
   background-color: var(--bg-card-a);
 }
 .card.border.fb-card::before {
@@ -79,6 +81,34 @@ header {
   filter: var(--text-atribution-h);
 }
 
+.dark-theme{
+  --bg: hsl(230, 17%, 14%);
+  --top-bg: hsl(232, 19%, 15%);
+  --bg-card: hsl(228, 28%, 20%);
+  --bg-card-a: hsl(228, 26%, 27%);
+  --text-secondary: hsl(228, 34%, 66%);
+  --text: hsl(0, 0%, 100%);
+  --text-atribution: hsl(228, 73%, 78%);
+  --text-atribution-h: brightness(1.5);
+  --toggle-checked:linear-gradient(
+    to right,
+    hsl(210, 78%, 56%) 0%,
+    hsl(146, 68%, 55%) 100%
+  );
+}
+
+.light-theme{
+  --toggle: hsl(230, 22%, 74%);
+  --bg: hsl(0, 0%, 100%);
+  --top-bg: hsl(225, 100%, 98%);
+  --bg-card: hsl(227, 47%, 96%);
+  --bg-card-a: hsl(232, 33%, 91%);
+  --text-secondary: hsl(228, 12%, 44%);
+  --text: hsl(230, 17%, 14%);
+  --text-atribution: hsl(228, 45%, 44%);
+  --text-atribution-h: brightness(0.5);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: hsl(230, 17%, 14%);
@@ -89,5 +119,10 @@ header {
     --text: hsl(0, 0%, 100%);
     --text-atribution: hsl(228, 73%, 78%);
     --text-atribution-h: brightness(1.5);
+    --toggle-checked:linear-gradient(
+      to right,
+      hsl(210, 78%, 56%) 0%,
+      hsl(146, 68%, 55%) 100%
+    );
   }
 }
