@@ -35,7 +35,6 @@ body {
 }
 header {
   background-color: var(--top-bg);
-  /*background-color: white;*/
 }
 #main-title {
   border-bottom: 1px solid var(--bg-card-a);
