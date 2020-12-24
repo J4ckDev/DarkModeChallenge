@@ -1,11 +1,10 @@
 header{
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-bottom: 130px;
-}
-#main-title{
-  width: 70.5%;
+  max-width: 1160px;
 }
 h1{
   font-size: var(--header-one-l);
@@ -28,9 +27,6 @@ h1{
 }
 #title-theme{
   padding-right: 12px;
-}
-.toggle{
-  margin-right: 4px;
 }
 #top-cards{
   margin-top: -107px;

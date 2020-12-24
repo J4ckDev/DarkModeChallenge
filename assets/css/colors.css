@@ -33,7 +33,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
 }
-header {
+.header {
   background-color: var(--top-bg);
 }
 #main-title {
